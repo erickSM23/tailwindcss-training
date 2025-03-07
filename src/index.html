@@ -8,33 +8,33 @@
     <link href="./input.css" rel="stylesheet">
 </head>
 <body>
-    <div class="h-screen w-screen grid grid-cols-2 grid-rows-6">
+    <div class="h-screen w-screen grid grid-cols-1 md:grid-cols-2 grid-rows-6">
         <!-- Imagem Principal -->
-        <div class="row-span-5 flex justify-end">
+        <div class="row-span-5 md:flex justify-end hidden">
             <img class="max-w-96" src="img/insta-img.png" alt="instagram imagem">
         </div>
 
         <!-- Formulário -->
         <div class="row-span-5 flex flex-col justify-center items-center grid-cols-1">
-            <form class="w-80 flex flex-col justify-center items-center border rounded-sm">
+            <form class="w-80 flex flex-col justify-center items-center border rounded-sm px-10 py-4 gap-5">
                 <img class="w-52" src="img/insta-logo.png" alt="imagem do instagram logo">
 
-                <input placeholder="numero de telefone, email">
-                <input placeholder="Password">
+                <input class="bg-slate-50 h-9 w-full pl-3 border rounded-sm" placeholder="numero de telefone, email">
+                <input class="bg-slate-50 h-9 w-full pl-3 border rounded-sm" placeholder="Password">
 
-                <button>entrar</button>
+                <button class="bg-blue-400 block w-full rounded-md h-8 text-slate-50 hover:bg-blue-300">entrar</button>
 
-                <a href="#">logar com o facebook</a>
-                <a href="#">esqueci minha senha</a>
+                <a href="#" class="text-blue-800 font-bold cursor-pointer">logar com o facebook</a>
+                <a href="#" class="text-blue-800 text-sm cursor-pointer">esqueci minha senha</a>
             </form>
 
-            <div>
-                <p>não tem conta? cadastrar-se</p>
+            <div class="border w-80 my-4 text-center py-4">
+                <p>não tem conta? <a href="#" class="text-blue-400 font-bold">cadastrar-se</a></p>
             </div>
 
             <p>baixe o aplicativo</p>
 
-            <div>
+            <div class="flex gap-2 mt-4">
                 <img class="h-10" src="img/apple.png" alt="imagem da apple">
                 <img class="h-10" src="img/google.png" alt="imagem do google">
             </div>
@@ -42,26 +42,26 @@
 
         <!-- Rodapé -->
 
-        <div class=" row-span-1-span-1">
-            <ul>
-                <li>meta</li>
-                <li>about</li>
-                <li>blog</li>
-                <li>jobs</li>
-                <li>help</li>
-                <li>api</li>
-                <li>privacy</li>
-                <li>terms</li>
-                <li>locations</li>
-                <li>instagram lite</li>
-                <li>threads</li>
-                <li>contact uploading and non-users</li>
-                <li>meta verifield</li>
+        <div class=" row-span-1 col-span-2">
+            <ul class="flex flex-wrap gap-5 justify-center">
+                <li class="text-sm text-slate-800">meta</li>
+                <li class="text-sm text-slate-800">about</li>
+                <li class="text-sm text-slate-800">blog</li>
+                <li class="text-sm text-slate-800">jobs</li>
+                <li class="text-sm text-slate-800">help</li>
+                <li class="text-sm text-slate-800">api</li>
+                <li class="text-sm text-slate-800">privacy</li>
+                <li class="text-sm text-slate-800">terms</li>
+                <li class="text-sm text-slate-800">locations</li>
+                <li class="text-sm text-slate-800">instagram lite</li>
+                <li class="text-sm text-slate-800">threads</li>
+                <li class="text-sm text-slate-800">contact uploading and non-users</li>
+                <li class="text-sm text-slate-800">meta verifield</li>
             </ul>
 
-            <ul>
-                <li>português brasil</li>
-                <li>2024 intagram from meta</li>
+            <ul class="flex flex-wrap gap-5 justify-center mt-6 ">
+                <li class=" text-slate-800">português brasil</li>
+                <li class=" text-slate-800">2024 intagram from meta</li>
             </ul>
         </div>
     </div>
