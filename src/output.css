@@ -9,6 +9,8 @@
     --color-red-500: oklch(0.637 0.237 25.331);
     --color-red-600: oklch(0.577 0.245 27.325);
     --color-red-700: oklch(0.505 0.213 27.518);
+    --color-amber-400: oklch(0.828 0.189 84.429);
+    --color-amber-800: oklch(0.473 0.137 46.201);
     --color-blue-300: oklch(0.809 0.105 251.813);
     --color-blue-400: oklch(0.707 0.165 254.624);
     --color-blue-800: oklch(0.424 0.199 265.638);
@@ -1130,6 +1132,12 @@
   .bg-\[var\(--my_variable\)\] {
     background-color: var(--my_variable);
   }
+  .bg-amber-400 {
+    background-color: var(--color-amber-400);
+  }
+  .bg-amber-800 {
+    background-color: var(--color-amber-800);
+  }
   .bg-blue-400 {
     background-color: var(--color-blue-400);
   }
@@ -1385,6 +1393,9 @@
   }
   .align-top {
     vertical-align: top;
+  }
+  .font-\[\'teste\'\] {
+    font-family: 'teste';
   }
   .text-sm {
     font-size: var(--text-sm);
